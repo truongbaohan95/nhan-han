@@ -531,27 +531,27 @@
                             <img src="nhan-han/images/frame.png" alt="groom" class="img-responsive"
                                 style="border-radius: 0%;">
                         </div> -->
-                        <div class="desc-groom pt-4" style="font-weight: bold">
-                            <p>Nguyễn Văn Nhân</p>
-                            <p>Techcombank</p>
-                            <p>STK: 19032556795029</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="couple-half">
-                    <!-- <div class="bride">
-                            <img src="nhan-han/images/han-stk.jpg" alt="groom" class="img-responsive"
-                                style="border-radius: 0%;">
-                        </div> -->
-                        <div class="desc-bride" style="font-weight: bold;">
-                            <p>Trương Bảo Hân</p>
-                            <p>Agribank</p>
-                            <p>STK: 2007215002947</p>
-                        </div>
+                    <div class="desc-groom pt-4" style="font-weight: bold">
+                        <p>Nguyễn Văn Nhân</p>
+                        <p>Techcombank</p>
+                        <p>STK: 19032556795029</p>
                     </div>
                 </div>
             </div>
+            <div class="couple-half">
+                <!-- <div class="bride">
+                            <img src="nhan-han/images/han-stk.jpg" alt="groom" class="img-responsive"
+                                style="border-radius: 0%;">
+                        </div> -->
+                <div class="desc-bride" style="font-weight: bold;">
+                    <p>Trương Bảo Hân</p>
+                    <p>Agribank</p>
+                    <p>STK: 2007215002947</p>
+                </div>
+            </div>
         </div>
+    </div>
+    </div>
     </div>
     <div id="fh5co-services">
         <div class="container">
@@ -663,6 +663,25 @@
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0&appId=939927960105334&autoLogAppEvents=1"
         nonce="yOajZMUJ"></script>
+
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '939927960105334',
+                xfbml: true,
+                version: 'v10.0'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <!--Play background music-->
     <!-- <script>
         var x = document.getElementById("myAudio");
